@@ -1,0 +1,150 @@
+<!doctype html>
+<html>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://bootswatch.com/5/minty/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="icon" type="https://2h6212.p3cdn1.secureserver.net/wp-content/uploads/2022/10/logo-BIG-TOE--1536x1398.png" href="https://2h6212.p3cdn1.secureserver.net/wp-content/uploads/2022/10/logo-BIG-TOE--1536x1398.png"/>
+    <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="stylesheets/styleIndex.css">
+    <title>Pacientes - Categoría Musculoesquelético</title>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-md fixed-top bg-primary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/"><iconify-icon icon="material-symbols:home-outline-rounded" style="color: #f29494;" width="30" height="30"></iconify-icon></a>
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">
+              <span class="visually-hidden"></span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-white" href="#">Pacientes - Categoría Musculoesquelético</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"></a>
+          </li>
+        </ul>
+        </div>
+      </div>
+    </nav>
+      <div class="main-container">
+        
+        <br>
+        <div></div>
+        <br>
+      <div class="main-container">
+        <br>
+        <div></div>
+        <br>
+<!--           <a href="/createCardio" class="btn btn-outline-primary md-block" title="Agregar Cardio"><box-icon name='plus-circle' size='lg' color='#f29494' ></box-icon></a> -->
+
+<div class="container">
+  <a href="/createPacientes" class="btn btn-outline-primary">Registrar Nuevo Paciente</a>
+  <a href="/indexPacientes" class="btn btn-outline-primary">Lista Pacientes</a>
+</div>
+
+
+          <br>
+          <div></div>
+          <br>
+          <table class="table table-responsive text-align:center table table-bordered text-center" id="tabla" >
+              <thead class="bg-secondary" align="center"> 
+                  <tr class="bg-secondary" >
+                    <th scope="col" hidden>id</th>
+                    <th scope="col" class="text-light">Romberg</th>
+                    <th scope="col" class="text-light ">Romberg Sensibilizado</th>
+                    <th scope="col" class="text-light ">Reacciones de Equilibrio</th>
+                    <th scope="col" class="text-light ">Reacciones Protectivas</th>
+                    <th scope="col" class="text-light ">Perfusión distal (sgs) - MMSS</th>
+                    <th scope="col" class="text-light ">Perfusión distal (sgs) - MMII</th>
+                    <th scope="col" class="text-light ">Pulsos</th>
+                    <th scope="col" class="text-light ">Edema</th>
+                    <th scope="col" class="text-light ">Integridad Articular y de la Movilidad</th>
+                    <th scope="col" class="text-light ">Estado de Conciencia</th>
+                    <th scope="col" class="text-light ">Orientación</th>
+                    <th scope="col" class="text-light ">Cognición</th>
+                    <th scope="col" class="text-light ">FUERZA MUSCULAR (Miembros Superiores)</th>
+                    <th scope="col" class="text-light ">FUERZA MUSCULAR (Miembros Inferiores)</th>
+                    <th scope="col" class="text-light ">FLEXIBILIDAD- ELASTICIDAD (Miembros Superiores)</th>
+                    <th scope="col" class="text-light ">FLEXIBILIDAD- ELASTICIDAD (Miembros Inferiores)</th>
+                    <th scope="col" class="text-light ">Dolor</th>
+                    <th scope="col" class="text-light ">Localización</th>
+                    <th scope="col" class="text-light ">Intensidad</th>
+                    <th scope="col" class="text-light ">Factores Agravantes</th>
+                    <th scope="col" class="text-light ">Factores Atenuantes</th>
+                    <th scope="col" class="text-light ">Evolución</th>
+                    <th scope="col" class="text-light ">Frecuencia</th>
+                    <th scope="col" class="text-light ">Rango de Movimiento Articular Miembros Superiores (Completos)</th>
+                    <th scope="col" class="text-light ">Rango de Movimiento Articular Miembros Superiores (Incompletos)</th>
+                    <th scope="col" class="text-light ">Miembros Inferiores- (Completos)</th>
+                    <th scope="col" class="text-light ">Miembros Inferiores- (Incompletos)</th>
+                    <th scope="col" hidden>FKPersona</th>
+                    <th scope="col" class="text-light">Paciente</th>
+                    <th scope="col" class="text-light ">Opciones</th>
+                  </tr> 
+              </thead>
+              <tbody>
+                <% registrosm.forEach((musc)=>{ %>
+                  <tr>
+                      <td hidden><%= musc.id %></td>
+                      <td><%= musc.Romberg %></td>
+                      <td><%= musc.RombergSensibilizado %></td>
+                      <td><%= musc.ReaccionesEquilibrio %></td>
+                      <td><%= musc.ReaccionesProtectivas %></td>
+                      <td><%= musc.MMSSPDCirculacionAVLMusculo %></td>
+                      <td><%= musc.MMIIPDCirculacionAVLMusculo %></td>
+                      <td><%= musc.PulsosCirculacionAVLMusculo %></td>
+                      <td><%= musc.EdemaCirculacionAVLMusculo %></td>
+                      <td><%= musc.IntegridadArticularyMovilidad %></td>
+                      <td><%= musc.EstadoConciencia %></td>
+                      <td><%= musc.Orientacion %></td>
+                      <td><%= musc.Cognicion %></td>
+                      <td><%= musc.FMMSuperiores %></td>
+                      <td><%= musc.FMMInferiores %></td>
+                      <td><%= musc.FlexMSuperiores %></td>
+                      <td><%= musc.FlexMInferiores %></td>
+                      <td><%= musc.OpcionDolorMusculo %></td>
+                      <td><%= musc.DolorMusculoLocalizacion %></td>
+                      <td><%= musc.DolorMusculoIntensidad %></td>
+                      <td><%= musc.DolorMusculoFactoresAgravantes %></td>
+                      <td><%= musc.DolorMusculoFactoresAtenuantes %></td>
+                      <td><%= musc.DolorMusculoEvolucion %></td>
+                      <td><%= musc.DolorMusculoFreciencia %></td>
+                      <td><%= musc.CompletosSup %></td>
+                      <td><%= musc.IncompletosSup %></td>
+                      <td><%= musc.CompletosInf %></td>
+                      <td><%= musc.IncompletosInf %></td>
+                      <% usuariom.forEach((user)=>{ %>
+                        <% if (musc.FKPersona===user.id) { %>
+                          <td><%= user.NombreCompleto %></td>
+                        <% } %>
+                      <% }) %>
+                      <td hidden><%= musc.FKPersona %></td>
+                      <td>
+                          <a href="/editMus/<%= musc.id %>" class="btn btn-outline-primary" style="margin: 10px">Editar</a>
+                          <iconify-icon icon="akar-icons:edit" style="color: #7abfa6;"></iconify-icon>
+                          <a href="/deleteMus/<%= musc.id %>" class="btn btn-outline-secondary">Eliminar</a>
+                          <iconify-icon icon="fluent:delete-24-filled" style="color: #f29494;"></iconify-icon>
+                      </td>
+                  </tr>
+                  <% }) %>
+              </tbody>
+          </table>
+      </div>
+      <!-- <box-icon name='sushi' rotate='90' ></box-icon> -->
+  </body>
+</html>

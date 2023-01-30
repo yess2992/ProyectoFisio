@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://bootswatch.com/5/minty/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylesheets/stylesCreate.css">
+    <link rel="icon" type="https://2h6212.p3cdn1.secureserver.net/wp-content/uploads/2022/10/logo-BIG-TOE--1536x1398.png" href="https://2h6212.p3cdn1.secureserver.net/wp-content/uploads/2022/10/logo-BIG-TOE--1536x1398.png"/>
+    <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+
+    <title>Tratamiento</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md fixed-top bg-primary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/"><iconify-icon icon="material-symbols:home-outline-rounded" style="color: #f29494;" width="30" height="30"></iconify-icon></a>
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">
+              <span class="visually-hidden"></span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-white" href="#">FisioInnova - Tratamiento</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"></a>
+          </li>
+        </ul>
+        </div>
+      </div>
+    </nav>
+      <div class="container">
+        <br>
+        <br>
+        <br>
+        <img src="https://2h6212.p3cdn1.secureserver.net/wp-content/uploads/2022/10/logo-BIG-TOE--1536x1398.png" align="right" width="220" height="210" max-width= "263px">
+        <br>
+        <br>
+        <br>
+          <h3>Tratamiento</h3>
+          <hr>
+          <div class="row">
+            <div class="container">
+        </div>
+          <div class="form-check-inline">
+            <form action="/saveTrat" method="POST">
+              <div class="mb-3">
+                <input type="number" class="form-control" id="id" name="id" hidden>
+                </div>
+            </div>
+            <div class="col-md-4">
+              <label for="CondSaludTratamto" class="form-label">Condición de salud</label>
+               <input type="text" class="form-control" id="CondSaludTratamto" name="CondSaludTratamto">
+              </div>
+          <div class="col-md-4">
+            <label for="DescripcionTratamto" class="form-label">Descripción</label>
+              <input type="text" class="form-control" id="DescripcionTratamto" name="DescripcionTratamto">
+          </div>
+          <div class="col-md-4">
+            <label for="FirmaFisio" class="form-label">Firma del Fisioterapeuta</label>
+              <input type="text" class="form-control" id="FirmaFisio" name="FirmaFisio">
+          </div>
+          <div class="col-md-4">
+            <label for="RegProfesional" class="form-label">Registro profesional</label>
+              <input type="number" class="form-control" id="RegProfesional" name="RegProfesional">
+          </div>
+          <div class="col-md-4">
+            <label for="FKPersona" class="form-label">Paciente</label>
+            <!-- <input type="number" class="form-control" id="FKPersona" name="FKPersona" placeholder="FKPersona"> -->
+            <select class="form-select" aria-label="Default select example" name="FKPersona" id="FKPersona">
+              <option selected disabled>Seleccione un paciente</option>
+              <% results.forEach((user)=>{ %>
+                <option value="<%= user.id %>">
+                  <%= user.NumIdentificacion %> - <%= user.NombreCompleto%>
+                </option>
+              <% }) %>
+            </select>
+        </div>
+      <div></div>
+      <br>
+        <button type="submit" class="btn btn-outline-primary" style="width : 90px; height: 90px">Guardar datos</button>
+        <br>
+        <div></div>
+        <br>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      
+      <!-- <box-icon name='sushi' rotate='90' ></box-icon> -->
+  </body>
+</html>

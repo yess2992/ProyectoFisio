@@ -1,0 +1,322 @@
+<!doctype html>
+<html>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://bootswatch.com/5/minty/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="icon" type="https://2h6212.p3cdn1.secureserver.net/wp-content/uploads/2022/10/logo-BIG-TOE--1536x1398.png" href="https://2h6212.p3cdn1.secureserver.net/wp-content/uploads/2022/10/logo-BIG-TOE--1536x1398.png"/>
+    <!-- <link rel="stylesheet" href="/src/public/styles.css"> -->
+    <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+
+    <link rel="stylesheet" href="stylesheets/stylesCreate.css">
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+
+    <title>Cardiorespiratorio</title>
+    <style>
+      label {
+    color: #3D2E48;
+    display: block;
+    padding: 10px;
+    margin: 3px;
+    font-size: 17px;
+  }
+  h3 {
+  color : #F29494;
+  }
+  hr,h5, hr{
+    color: #7ABFA6;
+    
+  }
+  h6, h4 {
+    color : #F29494;
+    font-size: 17px;
+  }
+  img {
+    height: 210px;
+}
+.navbar {
+  font-size: 21px;
+}
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md fixed-top bg-primary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/"><iconify-icon icon="material-symbols:home-outline-rounded" style="color: #f29494;" width="30" height="30"></iconify-icon></a>
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">
+              <span class="visually-hidden"></span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-white" href="#">FisioInnova - Edición Categorías</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"></a>
+          </li>
+        </ul>
+        </div>
+      </div>
+    </nav>
+      <div class="container">
+        <br>
+        <br>
+        <br>
+        <img src="https://2h6212.p3cdn1.secureserver.net/wp-content/uploads/2022/10/logo-BIG-TOE--1536x1398.png" align="right" width="220" height="210" max-width= "263px">
+        <br>
+        <br>
+        <br>
+          <h3>Editar Categoría - Cardiorespiratorio</h3>
+          <hr size="8px">
+          <div class="row">
+            <div class="container">
+        </div>
+          <div class="form-check-inline">
+            <form action="/updateCard" method="POST">
+              <div class="mb-3">
+                <input id="id" name="id" value="<%= user.id %>" hidden>
+                </div>
+            </div>
+            <div class="col-sm-1 col-md-2 col-lg-3">
+              <label for="Temperatura" class="form-label">Temperatura</label>
+              <input type="text" class="form-control" id="Temperatura" name="Temperatura" value="<%= user.Temperatura %>">
+              </div>
+              <div class="col-sm-1 col-md-2 col-lg-3">
+                <label for="FrecuenciaCardiaca" class="form-label">Frecuencia Cardiáca</label>
+                <input type="text" class="form-control" id="FrecuenciaCardiaca" name="FrecuenciaCardiaca" value="<%= user.FrecuenciaCardiaca %>">
+                </div>
+                <div class="col-sm-1 col-md-2 col-lg-3">
+                  <label for="TensionArterial" class="form-label">Tensión Arterial</label>
+                  <input type="text" class="form-control" id="TensionArterial" name="TensionArterial" value="<%= user.TensionArterial %>">
+                  </div>
+                  <div class="col-sm-1 col-md-2 col-lg-3">
+                    <label for="FrecuenciaRespiratoria" class="form-label">Frecuencia Respiratoria</label>
+                    <input type="text" class="form-control" id="FrecuenciaRespiratoria" name="FrecuenciaRespiratoria" value="<%= user.FrecuenciaRespiratoria %>">
+                    </div>
+                      <div class="col-sm-1 col-md-2 col-lg-3">
+                        <label for="SaturacionOxigeno" class="form-label">Saturación Oxígeno</label>
+                        <input type="text" class="form-control" id="SaturacionOxigeno" name="SaturacionOxigeno" value="<%= user.SaturacionOxigeno %>">
+                        </div>
+                        <div class="col-sm-1 col-md-2 col-lg-3">
+                        <label for="Simetrico" class="form-label">Tórax Simétrico</label>
+                          <select name="Simetrico" id="Simetrico" class="form-select" tabindex="3">
+                              <option selected disabled>Seleccione una opción</option>
+                              <option <%= user.Simetrico=='Normal' ? "selected" : '' %> value="Normal">Normal</option>
+                              <option <%= user.Simetrico=='No aplica' ? "selected" : '' %> value="No aplica">No aplica</option>
+                          </select>
+                      </div>
+                      <br>
+                      <div class="col-sm-1 col-md-2 col-lg-3">
+                      <label for="Asimetrico" class="form-label">Tórax Asimétrico</label>
+                        <select name="Asimetrico" id="Asimetrico" class="form-select">
+                            <option selected disabled>Seleccione una opción</option>
+                            <option <%= user.Asimetrico=='P. de paloma' ? "selected" : '' %> value="P. de paloma">P. de paloma</option>
+                            <option <%= user.Asimetrico=='Excavatum' ? "selected" : '' %> value="Excavatum">Excavatum</option>
+                            <option <%= user.Asimetrico=='Quilla' ? "selected" : '' %> value="Quilla">Quilla</option>
+                            <option <%= user.Asimetrico=='Tonel' ? "selected" : '' %> value="Tonel">Tonel</option>
+                            <option <%= user.Asimetrico=='No aplica' ? "selected" : '' %> value="No aplica">No aplica</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-1 col-md-2 col-lg-3">
+                      <label for="Movilidad" class="form-label">Movilidad Tórax</label>
+                      <input type="text" class="form-control" id="Movilidad" name="Movilidad" value="<%= user.Movilidad %>">
+                      </div>
+                      <div class="col-sm-1 col-md-2 col-lg-3">
+                        <label for="AmplitudRespiratoria" class="form-label">Amplitud Respiratoria</label>
+                          <select name="AmplitudRespiratoria" id="AmplitudRespiratoria" class="form-select">
+                             <option selected disabled>Seleccione una opción</option>
+                             <option <%= user.AmplitudRespiratoria=='Superficial' ? "selected" : '' %> value="Superficial">Superficial</option>
+                             <option <%= user.AmplitudRespiratoria=='Profunda' ? "selected" : '' %> value="Profunda">Profunda</option>
+                             <option <%= user.AmplitudRespiratoria=='No aplica' ? "selected" : '' %> value="No aplica">No aplica</option>
+                          </select>
+                      </div>
+                      <div class="col-sm-1 col-md-2 col-lg-3">
+                        <label for="PatronRespiratorio" class="form-label">Patrón Respiratorio</label>
+                          <select name="PatronRespiratorio" id="PatronRespiratorio" class="form-select">
+                             <option selected disabled>Seleccione una opción</option>
+                             <option <%= user.PatronRespiratorio=='Abdominal' ? "selected" : '' %> value="Abdominal">Abdominal</option>
+                             <option <%= user.PatronRespiratorio=='Toráxico' ? "selected" : '' %> value="Toráxico">Toráxico</option>
+                             <option <%= user.PatronRespiratorio=='Mixto' ? "selected" : '' %> value="Mixto">Mixto</option>
+                             <option <%= user.PatronRespiratorio=='No aplica' ? "selected" : '' %> value="No aplica">No aplica</option>
+                          </select>
+                      </div>
+                      <div class="col-sm-1 col-md-2 col-lg-3">
+                        <label for="Tos" class="form-label">Tos</label>
+                          <select name="Tos" id="Tos" class="form-select">
+                              <option selected disabled>Seleccione una opción</option>
+                              <<option <%= user.Tos=='Sí' ? "selected" : '' %> value="Sí">Sí</option>
+                              <option <%= user.Tos=='No' ? "selected" : '' %> value="No">No</option>
+                              <option <%= user.Tos=='No aplica' ? "selected" : '' %> value="No aplica">No aplica</option>
+                          </select>
+                      </div>
+                        <div class="col-sm-1 col-md-2 col-lg-3">
+                          <label for="TipoTos" class="form-label">Tipo Tos</label>
+                           <input type="text" class="form-control" id="TipoTos" name="TipoTos">
+                          </div>
+                          <div class="col-sm-1 col-md-2 col-lg-3">
+                            <label for="Esputo" class="form-label">Esputo</label>
+                              <select name="Esputo" id="Esputo" class="form-select">
+                                 <option selected disabled>Seleccione una opción</option>
+                                 <option <%= user.Esputo=='Sí' ? "selected" : '' %> value="Sí">Sí</option>
+                                 <option <%= user.Esputo=='No' ? "selected" : '' %> value="t">No</option>
+                                 <option <%= user.Esputo=='No aplica' ? "selected" : '' %> value="No">No aplica</option>
+                              </select>
+                          </div>
+                            <div class="col-sm-1 col-md-2 col-lg-3">
+                              <label for="TipoEsputo" class="form-label">Tipo Esputo</label>
+                              <input type="text" class="form-control" id="TipoEsputo" name="TipoEsputo" value="<%= user.TipoEsputo %>">
+                              </div>
+                              <div class="col-sm-1 col-md-2 col-lg-4">
+                                <label for="SignosDifRespiratoria" class="form-label">Signos de dificultad respiratoria</label>
+                                  <select name="SignosDifRespiratoria" id="SignosDifRespiratoria" class="form-select">
+                                       <option selected disabled>Seleccione una opción</option>
+                                       <option <%= user.SignosDifRespiratoria=='Tirajes' ? "selected" : '' %> value="Tirajes">Tirajes</option>
+                                       <option <%= user.SignosDifRespiratoria=='Aleteo Nasal' ? "selected" : '' %> value="Aleteo Nasal">Aleteo Nasal</option>
+                                       <option <%= user.SignosDifRespiratoria=='Músculos Accesorios' ? "selected" : '' %> value="Músculos Accesorios">Músculos Accesorios</option>
+                                       <option <%= user.SignosDifRespiratoria=='Ninguno' ? "selected" : '' %> value="Ninguno">Ninguno</option>
+                                  </select>
+                              </div>
+                              <div></div>
+                                <br>
+                              <div class="col-sm-1 col-md-2 col-lg-3">
+                                <label for="FremitoBronqueal" class="form-label">Frémito Bronqueal</label>
+                                  <select name="FremitoBronqueal" id="FremitoBronqueal" class="form-select">
+                                      <option selected disabled>Seleccione una opción</option>
+                                      <option <%= user.FremitoBronqueal=='Sí' ? "selected" : '' %> value="Sí">Sí</option>
+                                      <option <%= user.FremitoBronqueal=='No' ? "selected" : '' %> value="No">No</option>
+                                      <option <%= user.FremitoBronqueal=='No Aplica' ? "selected" : '' %> value="No Aplica">No Aplica</option>
+                                  </select>
+                              </div>
+                              <div class="col-sm-1 col-md-2 col-lg-3">
+                                <label for="RuidosRespiratorios" class="form-label">Ruidos Respiratorios</label>
+                                  <select name="RuidosRespiratorios" id="RuidosRespiratorios" class="form-select">
+                                    <option selected disabled>Seleccione una opción</option>
+                                    <option <%= user.RuidosRespiratorios=='Ruido Traqueal' ? "selected" : '' %> value="Ruido Traqueal">Ruido Traqueal</option>
+                                    <option <%= user.RuidosRespiratorios=='Murmullo vesicular normal' ? "selected" : '' %> value="Murmullo vesicular normal">Murmullo vesicular normal</option>
+                                    <option <%= user.RuidosRespiratorios=='Ruidos Sobreagregados' ? "selected" : '' %> value="Ruidos Sobreagregados">Ruidos Sobreagregados</option>
+                                    <option <%= user.RuidosRespiratorios=='No Aplica' ? "selected" : '' %> value="No Aplica">No Aplica</option>
+                                  </select>
+                              </div>
+                              <div class="col-sm-1 col-md-2 col-lg-3">
+                                <label for="RuidosCardiacos" class="form-label">Ruidos Cardiácos</label>
+                                  <select name="RuidosCardiacos" id="RuidosCardiacos" class="form-select">
+                                      <option selected disabled>Seleccione una opción</option>
+                                      <option <%= user.RuidosCardiacos=='Rítmicos' ? "selected" : '' %> value="Rítmicos" selected>Rítmicos</option>
+                                      <option <%= user.RuidosCardiacos=='Arrítmicos' ? "selected" : '' %> value="Arrítmicos">Arrítmicos</option>
+                                      <option <%= user.RuidosCardiacos=='No Aplica' ? "selected" : '' %> value="No Aplica">No Aplica</option>
+                                  </select>
+                              </div>
+                              <div></div>
+                              <br>
+                              <h6>Tecnología de Asistencia</h6>
+                              <div></div>
+                                <br>
+                          <div class="col-sm-1 col-md-2 col-lg-3">
+                            <label for="Ortesis" class="form-label">Ortesis (férulas)</label>
+                            <div></div>
+                                <br>
+                                <input type="text" class="form-control" id="Ortesis" name="Ortesis" value="<%= user.Ortesis %>">
+                            </div>
+                            <div class="col-sm-1 col-md-2 col-lg-3">
+                              <label for="AsistenciaPosicionamiento" class="form-label">Asistencia para Posicionamiento</label>
+                              <input type="text" class="form-control" id="AsistenciaPosicionamiento" name="AsistenciaPosicionamiento" value="<%= user.AsistenciaPosicionamiento %>">
+                              </div>
+                              <div class="col-sm-1 col-md-2 col-lg-3">
+                                <div></div>
+                                <br>
+                                <label for="Tecnologia" class="form-label">Tecnología</label>
+                                <input type="text" class="form-control" id="Tecnologia" name="Tecnologia" value="<%= user.Tecnologia %>">
+                                </div>
+                                <div class="col-sm-1 col-md-2 col-lg-3">
+                                  <label for="AyudasDesplazamiento" class="form-label">Ayudas externas para desplazamiento</label>
+                                  <input type="text" class="form-control" id="AyudasDesplazamiento" name="AyudasDesplazamiento" placeholder="(silla de ruedas, caminador, muletas, bastón)" value="<%= user.AyudasDesplazamiento %>">
+                                  </div>
+                                  <div></div>
+                                  <br>
+                                  <h6>Dolor</h6>
+                                  <div class="col-sm-1 col-md-2 col-lg-3">
+                                    <label for="OpcionDolorCardio" class="form-label">Dolor</label>
+                                      <select name="OpcionDolorCardio" id="OpcionDolorCardio" class="form-select">
+                                          <option selected disabled>Seleccione una opción</option>
+                                          <option <%= user.OpcionDolorCardio=='Sí' ? "selected" : '' %> value="Sí">Sí</option>
+                                          <option <%= user.OpcionDolorCardio=='No' ? "selected" : '' %> value="No">No</option>
+                                          <option <%= user.OpcionDolorCardio=='No aplica' ? "selected" : '' %> value="No aplica">No Aplica</option>
+                                      </select>
+                                  </div>
+                              <div class="col-sm-1 col-md-2 col-lg-3">
+                                <label for="DolorCardioLocalizacion" class="form-label">Localización</label>
+                                <input type="text" class="form-control" id="DolorCardioLocalizacion" name="DolorCardioLocalizacion" value="<%= user.DolorCardioLocalizacion %>">
+                                </div>
+                                <div class="col-sm-1 col-md-2 col-lg-3">
+                                  <label for="DolorCardioIntensidad" class="form-label">Intensidad</label>
+                                  <input type="text" class="form-control" id="DolorCardioIntensidad" name="DolorCardioIntensidad" value="<%= user.DolorCardioIntensidad %>">
+                                  </div>
+                                  <div class="col-sm-1 col-md-2 col-lg-3">
+                                    <label for="DolorCardioFactoresAgravantes" class="form-label">Factores Agravantes</label>
+                                    <input type="text" class="form-control" id="DolorCardioFactoresAgravantes" name="DolorCardioFactoresAgravantes" value="<%= user.DolorCardioFactoresAgravantes %>">
+                                    </div>
+                                    <div class="col-sm-1 col-md-2 col-lg-3">
+                                        <label for="DolorCardioFactoresAtenuantes" class="form-label">Factores Atenuantes</label>
+                                        <input type="text" class="form-control" id="DolorCardioFactoresAtenuantes" name="DolorCardioFactoresAtenuantes" value="<%= user.DolorCardioFactoresAtenuantes %>">
+                                      </div>
+                                      <div class="col-sm-1 col-md-2 col-lg-3">
+                                        <label for="DolorCardioEvolucion" class="form-label">Evolución</label>
+                                        <input type="text" class="form-control" id="DolorCardioEvolucion" name="DolorCardioEvolucion" value="<%= user.DolorCardioEvolucion %>">
+                                      </div>
+                                      <div class="col-sm-1 col-md-2 col-lg-3">
+                                        <label for="DolorCardioFrecuencia" class="form-label">Frecuencia</label>
+                                        <input type="text" class="form-control" id="DolorCardioFrecuencia" name="DolorCardioFrecuencia" value="<%= user.DolorCardioFrecuencia %>">
+                                      </div>
+                                      <div></div>
+                                  <br>
+                                      <h6>Circulación Arterial Venosa y Linfática</h6>
+                                  <div class="col-sm-1 col-md-2 col-lg-3">
+                                    <label for="MMSSPDCirculacionAVLCardio" class="form-label">Perfusión distal (sgs) - MMSS</label>
+                                    <input type="text" class="form-control" id="MMSSPDCirculacionAVLCardio" name="MMSSPDCirculacionAVLCardio" value="<%= user.MMSSPDCirculacionAVLCardio %>">
+                                    </div>
+                                    <div class="col-sm-1 col-md-2 col-lg-3">
+                                      <label for="MMIIPDCirculacionAVLCardio" class="form-label">Perfusión distal (sgs) - MMII</label>
+                                      <input type="text" class="form-control" id="MMIIPDCirculacionAVLCardio" name="MMIIPDCirculacionAVLCardio" value="<%= user.MMIIPDCirculacionAVLCardio %>">
+                                      </div>
+                                    <div class="col-sm-1 col-md-2 col-lg-3">
+                                      <label for="PulsosCirculacionAVLCardio" class="form-label">Pulsos</label>
+                                      <input type="text" class="form-control" id="PulsosCirculacionAVLCardio" name="PulsosCirculacionAVLCardio" value="<%= user.PulsosCirculacionAVLCardio %>">
+                                      </div>
+                                      <div class="col-sm-1 col-md-2 col-lg-3">
+                                        <label for="EdemaCirculacionAVLCardio" class="form-label">Edema</label>
+                                        <input type="text" class="form-control" id="EdemaCirculacionAVLCardio" name="EdemaCirculacionAVLCardio" value="<%= user.EdemaCirculacionAVLCardio %>">
+                                        </div>
+                                        <br>
+                                        <div></div>
+                                        <br>
+                                        <div class="col-md-4" hidden>
+                                            <input type="number" class="form-control" id="FKPersona" name="FKPersona" value="<%= user.FKPersona %>">
+        </div>
+      <div></div>
+      <br>
+      <br>
+        <button type="submit" class="btn btn-outline-primary" style="width : 90px; height: 90px"  tabindex="12">Guardar datos</button>
+        <br>
+        <div></div>
+        <br>
+          </form>
+          </div>
+        </div>
+      </div>
+  </body>
+</html>

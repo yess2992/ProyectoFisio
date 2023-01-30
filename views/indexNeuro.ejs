@@ -1,0 +1,201 @@
+<!doctype html>
+<html>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://bootswatch.com/5/minty/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="icon" type="https://2h6212.p3cdn1.secureserver.net/wp-content/uploads/2022/10/logo-BIG-TOE--1536x1398.png" href="https://2h6212.p3cdn1.secureserver.net/wp-content/uploads/2022/10/logo-BIG-TOE--1536x1398.png"/>
+    <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="stylesheets/styleIndex.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+    <title>Pacientes - Categoría Neurorehabilitación</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md fixed-top bg-primary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/"><iconify-icon icon="material-symbols:home-outline-rounded" style="color: #f29494;" width="30" height="30"></iconify-icon></a>
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">
+              <span class="visually-hidden"></span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-white" href="#">Pacientes - Categoría Neurorehabilitación</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"></a>
+          </li>
+        </ul>
+        </div>
+      </div>
+    </nav>
+      <div class="main-container">
+        
+        <br>
+        <div></div>
+        <br>
+    <!-- <nav class="navbar navbar-expand-md fixed-top bg-primary">
+      <div class="container-fluid"> -->
+        <!-- <img src="https://2h6212.p3cdn1.secureserver.net/wp-content/uploads/2022/10/logo-BIG-TOE--1536x1398.png" align="right" width="122" height="104"> -->
+        <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarColor01">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link text-white">Datos Paciente - Categoría Neurorehabilitación</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav> -->
+
+<!--           <a href="/createCardio" class="btn btn-outline-primary md-block" title="Agregar Cardio"><box-icon name='plus-circle' size='lg' color='#f29494' ></box-icon></a> -->
+<div class="main-container">
+  <br>
+  <div></div>
+  <br>
+
+<div class="container">
+  <a href="/createPacientes" class="btn btn-outline-primary">Registrar Nuevo Paciente</a>
+  <a href="/indexPacientes" class="btn btn-outline-primary">Lista Pacientes</a>
+</div>
+
+
+          <br>
+          <div></div>
+          <br>
+          <table class="table table-responsive text-align:center table table-bordered" id="tabla" >
+              <thead class="bg-secondary"> 
+                  <tr class="bg-secondary" >
+                    <th scope="col" hidden>id</th>
+                    <th scope="col" class="text-light" class="bg-secondary">I: Olfatorio</th>
+                    <th scope="col" class="text-light ">II: Óptico</th>
+                    <th scope="col" class="text-light ">III: Oculomotor</th>
+                    <th scope="col" class="text-light ">IV: Troclear</th>
+                    <th scope="col" class="text-light ">V:Trigémino</th>
+                    <th scope="col" class="text-light ">VI: Abducems</th>
+                    <th scope="col" class="text-light ">VII: Facial</th>
+                    <th scope="col" class="text-light ">VIII: Vestibulococlear</th>
+                    <th scope="col" class="text-light ">IX: Glosofaríngeo</th>
+                    <th scope="col" class="text-light ">X: Vago</th>
+                    <th scope="col" class="text-light ">XI: Accesorio</th>
+                    <th scope="col" class="text-light ">XII: Hipogloso</th>
+                    <th scope="col" class="text-light ">Sensibilidad Superficial (Tacto, Dolor) (Miembros Superiores)</th>
+                    <th scope="col" class="text-light ">Sensibilidad Superficial (Tacto, Dolor) (Miembros Inferiores)</th>
+                    <th scope="col" class="text-light ">Sensibilidad Profunda (Batiestesia) (Miembros Superiores)</th>
+                    <th scope="col" class="text-light ">Sensibilidad Profunda (Batiestesia) (Miembros Inferiores)</th>
+                    <th scope="col" class="text-light ">Ciclo de la Marcha</th>
+                    <th scope="col" class="text-light ">Período del paso</th>
+                    <th scope="col" class="text-light ">Período de balanceo</th>
+                    <th scope="col" class="text-light ">Frecuencia (Cadencia)</th>
+                    <th scope="col" class="text-light ">Velocidad</th>
+                    <th scope="col" class="text-light ">Aceleración línea</th>
+                    <th scope="col" class="text-light ">Zancada</th>
+                    <th scope="col" class="text-light ">Longitud del paso</th>
+                    <th scope="col" class="text-light ">Ángulo del paso</th>
+                    <th scope="col" class="text-light ">Carateristicas Tróficas - Color</th>
+                    <th scope="col" class="text-light ">Carateristicas Tróficas - Hidratación</th>
+                    <th scope="col" class="text-light ">Carateristicas Tróficas - Temperatura</th>
+                    <th scope="col" class="text-light ">Carateristicas Tróficas - Vascularidad</th>
+                    <th scope="col" class="text-light ">Carateristicas Tróficas - Flexibilidad</th>
+                    <th scope="col" class="text-light ">Cartacterísticas Mecánicas - Elasticidad</th>
+                    <th scope="col" class="text-light ">Cartacterísticas Mecánicas - Viscosidad</th>
+                    <th scope="col" class="text-light ">Cartacterísticas Mecánicas - Volumen</th>
+                    <th scope="col" class="text-light ">Presencia de Cicatrices</th>
+                    <th scope="col" class="text-light ">Dolor</th>
+                    <th scope="col" class="text-light ">Localización</th>
+                    <th scope="col" class="text-light ">Intensidad</th>
+                    <th scope="col" class="text-light ">Factores Agravantes</th>
+                    <th scope="col" class="text-light ">Factores Atenuantes</th>
+                    <th scope="col" class="text-light ">Evolución</th>
+                    <th scope="col" class="text-light ">Frecuencia</th>
+                    <th scope="col" class="text-light ">Reflejos Osteotendinosos - Miembros Superiores</th>
+                    <th scope="col" class="text-light ">Reflejos Osteotendinosos - Miembros Inferiores</th>
+                    <th scope="col" class="text-light ">Tono Múscular - Miembros Superiores</th>
+                    <th scope="col" class="text-light ">Tono Múscular - Miembros Inferiores</th>
+                    <th scope="col" hidden>FKPersona</th>
+                    <th scope="col" class="text-light">Paciente</th>
+                    <th scope="col" class="text-light ">Opciones</th>
+                  </tr> 
+              </thead>
+              <tbody>
+                <% registrosNeu.forEach((neuro)=>{ %>
+                  <tr>
+                      <td hidden><%= neuro.id %></td>
+                      <td><%= neuro.Olfatorio %></td>
+                      <td><%= neuro.Optico %></td>
+                      <td><%= neuro.Oculomotor %></td>
+                      <td><%= neuro.Troclear %></td>
+                      <td><%= neuro.Trigemino %></td>
+                      <td><%= neuro.Abducems %></td>
+                      <td><%= neuro.Facial %></td>
+                      <td><%= neuro.Vestibulococlear %></td>
+                      <td><%= neuro.Glosofaringeo %></td>
+                      <td><%= neuro.Vago %></td>
+                      <td><%= neuro.Accesorio %></td>
+                      <td><%= neuro.Hipogloso %></td>
+                      <td><%= neuro.MiembroSupSS %></td>
+                      <td><%= neuro.MiembroInfSS %></td>
+                      <td><%= neuro.MiembroSupSP %></td>
+                      <td><%= neuro.MiembroInfSP %></td>
+                      <td><%= neuro.CicloMarcha %></td>
+                      <td><%= neuro.PeriodoP %></td>
+                      <td><%= neuro.PeriodoB %></td>
+                      <td><%= neuro.Frecuencia %></td>
+                      <td><%= neuro.Velocidad %></td>
+                      <td><%= neuro.AceleraciónL %></td>
+                      <td><%= neuro.Zancada %></td>
+                      <td><%= neuro.LongitudPaso %></td>
+                      <td><%= neuro.AnguloPaso %></td>
+                      <td><%= neuro.Color %></td>
+                      <td><%= neuro.Hidratacion %></td>
+                      <td><%= neuro.Temperatura %></td>
+                      <td><%= neuro.Vascularidad %></td>
+                      <td><%= neuro.Flexibilidad %></td>
+                      <td><%= neuro.Elasticidad %></td>
+                      <td><%= neuro.Viscosidad %></td>
+                      <td><%= neuro.Volumen %></td>
+                      <td><%= neuro.PCicatrices %></td>
+                      <td><%= neuro.OpcionDolorNeuro %></td>
+                      <td><%= neuro.DolorNeuroLocalizacion %></td>
+                      <td><%= neuro.DolorNeuroIntensidad %></td>
+                      <td><%= neuro.DolorNeuroFactoresAgravantes %></td>
+                      <td><%= neuro.DolorNeuroFactoresAtenuantes %></td>
+                      <td><%= neuro.DolorNeuroEvolucion %></td>
+                      <td><%= neuro.DolorNeuroFrecuencia %></td>
+                      <td><%= neuro.MiembrosSupRo %></td>
+                      <td><%= neuro.MiembrosInfRo %></td>
+                      <td><%= neuro.MiembrosSupTm %></td>
+                      <td><%= neuro.MiembrosInfTm %></td>
+                      <% usuariosNeu.forEach((user)=>{ %>
+                        <% if (neuro.FKPersona===user.id) { %>
+                          <td><%= user.NombreCompleto %></td>
+                        <% } %>
+                      <% }) %>
+                      <td hidden><%= neuro.FKPersona %></td>
+                      <td>
+                          <a href="/editNeur/<%= neuro.id %>" class="btn btn-outline-primary" style="margin: 10px">Editar</a>
+                          <iconify-icon icon="akar-icons:edit" style="color: #7abfa6;"></iconify-icon>
+                          <a href="/deleteNeur/<%= neuro.id %>" class="btn btn-outline-secondary">Eliminar</a>
+                          <iconify-icon icon="fluent:delete-24-filled" style="color: #f29494;"></iconify-icon>
+                      </td>
+                  </tr>
+                  <% }) %>
+              </tbody>
+          </table>
+      </div>
+  </body>
+</html>

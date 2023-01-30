@@ -1,0 +1,24 @@
+label {
+    color: #3D2E48;
+    display: block;
+    padding: 10px;
+    margin: 3px;
+    font-size: 17px;
+  }
+  h3 {
+  color : #F29494;
+  }
+  hr,h5, hr{
+    color: #7ABFA6;
+    
+  }
+  h6, h4 {
+    color : #F29494;
+    font-size: 17px;
+  }
+  img {
+    height: 210px;
+}
+.navbar {
+  font-size: 21px;
+}

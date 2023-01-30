@@ -1,0 +1,23 @@
+{
+  "name": "fisioinnova",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon src/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "express-load": "^1.1.16",
+    "moment": "^2.29.4",
+    "mysql2": "^2.3.3",
+    "normalize.css": "^8.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}

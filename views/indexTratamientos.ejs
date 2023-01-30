@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://bootswatch.com/5/minty/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="icon" type="https://2h6212.p3cdn1.secureserver.net/wp-content/uploads/2022/10/logo-BIG-TOE--1536x1398.png" href="https://2h6212.p3cdn1.secureserver.net/wp-content/uploads/2022/10/logo-BIG-TOE--1536x1398.png"/>
+    <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link rel="stylesheet" href="stylesheets/styleIndex.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+    <title>Tratamiento</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar navbar-expand-md fixed-top bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/"><iconify-icon icon="material-symbols:home-outline-rounded" style="color: #f29494;" width="30" height="30"></iconify-icon></a>
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">
+                <span class="visually-hidden"></span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-white" href="#">Datos Pacientes - Tratamientos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"></a>
+            </li>
+          </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="main-container">
+        <br>
+        <div></div>
+        <br>
+<div></div>
+
+<br>
+
+<div class="container">
+  <br>
+        <div></div>
+        <br>
+  <a href="/createPacientes" class="btn btn-outline-primary">Registrar Nuevo Paciente</a>
+          <br>
+          <div></div>
+          <br>
+          <table class="table table-bordered table-striped text-center mt-4">
+              <thead> 
+                  <tr class="bg-secondary">
+                    <th scope="col" hidden>id</th>
+                    <th scope="col" class="text-light">Condición de salud</th>
+                    <th scope="col" class="text-light">Descripción</th>
+                    <th scope="col" class="text-light">Firma del Fisioterapeuta</th>
+                    <th scope="col" class="text-light">Registro profesional</th>
+                    <th scope="col" hidden>FKPersona</th>
+                    <th scope="col" class="text-light">Paciente</th>
+                    <th scope="col" class="text-light">Categoría</th>
+                    <th scope="col" class="text-light">Opciones</th>
+                  </tr> 
+              </thead>
+              <tbody>
+                <% registrosTrat.forEach((trat)=>{ %>
+                  <tr>
+                      <td hidden><%= trat.id %></td>
+                      <td><%= trat.CondSaludTratamto %></td>
+                      <td><%= trat.DescripcionTratamto %></td>
+                      <td><%= trat.FirmaFisio %></td>
+                      <td><%= trat.RegProfesional %></td>
+                      <% usersTrat.forEach((user)=>{ %>
+                        <% if (trat.FKPersona===user.id) { %>
+                          <td><%= user.NombreCompleto %></td>
+                        <% } %>
+                      <% }) %>
+                      <td hidden><%= trat.FKPersona %></td>
+                      <td><%= trat.Categoria %></td>
+                      <td>
+                          <a href="/editTrat/<%= trat.id %>" class="btn btn-outline-primary" style="margin: 10px">Editar</a>
+                          <iconify-icon icon="akar-icons:edit" style="color: #7abfa6;"></iconify-icon>
+                          <a href="/deleteTrat/<%= trat.id %>" class="btn btn-outline-secondary">Eliminar</a>
+                          <iconify-icon icon="fluent:delete-24-filled" style="color: #f29494;"></iconify-icon>
+                      </td>
+                  </tr>
+                  <% }) %>
+              </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+      <!-- <box-icon name='sushi' rotate='90' ></box-icon> -->
+  </body>
+</html>

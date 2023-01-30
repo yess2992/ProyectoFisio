@@ -1,0 +1,28 @@
+CREATE FUNCTION `bigfisio`.getCategoryFunction(idPersona INT)
+RETURNS VARCHAR(80)
+begin
+	DECLARE countCardio INT;
+	DECLARE countMusculo INT;
+	DECLARE countNeuro INT;
+	DECLARE category VARCHAR(80); 
+
+	set countCardio = (select count(*) from cardiorespiratorios c where c.FKPersona = idPersona);
+	set countMusculo = (select count(*) from musculoesqueleticos m where m.FKPersona = idPersona);
+	set countNeuro = (select count(*) from neurorehabilitacions n where n.FKPersona = idPersona);
+	
+	if (countCardio > 0) then            
+		set category = "cardiorespiratorio";
+	else
+		if (countMusculo > 0) then                 
+			set category = 'musculoesqueletico';          
+		else
+			if (countNeuro > 0) then
+				set category = 'neurorehabilitacion';
+			else
+				set category = "sin categoria";
+			end if;
+		end if;
+	END IF;                                    
+	                                           
+	return category;
+end

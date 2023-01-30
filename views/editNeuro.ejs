@@ -1,0 +1,352 @@
+<!doctype html>
+<html>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://bootswatch.com/5/minty/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+
+    <link rel="stylesheet" href="stylesheets/stylesCreate.css">
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+
+    <title>Editar Categoría - Neurorehabilitación</title>
+  </head>
+  <style>
+    label {
+  color: #3D2E48;
+  display: block;
+  padding: 10px;
+  margin: 3px;
+  font-size: 17px;
+}
+h3 {
+color : #F29494;
+}
+hr,h5, hr{
+  color: #7ABFA6;
+  
+}
+h6, h4 {
+  color : #F29494;
+  font-size: 17px;
+}
+img {
+  height: 210px;
+}
+.navbar {
+  font-size: 21px;
+}
+  </style>
+  <body>
+    <nav class="navbar navbar-expand-md fixed-top bg-primary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/"><iconify-icon icon="material-symbols:home-outline-rounded" style="color: #f29494;" width="30" height="30"></iconify-icon></a>
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">
+              <span class="visually-hidden"></span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-white" href="#">FisioInnova - Edición Categorías</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"></a>
+          </li>
+        </ul>
+        </div>
+      </div>
+    </nav>
+      <div class="container">
+        <br>
+        <br>
+        <br>
+        <img src="https://2h6212.p3cdn1.secureserver.net/wp-content/uploads/2022/10/logo-BIG-TOE--1536x1398.png" align="right" width="220" height="210" max-width= "263px">
+        <br>
+        <br>
+        <br>
+          <h3>Editar Categoría - Neurorehabilitación</h3>
+          <hr size="8px">
+          <div class="row">
+            <div class="container">
+        </div>
+          <div class="form-check-inline">
+            <form action="/updateNeur" method="POST">
+              <div class="mb-3">
+                <input type="number" class="form-control" id="id" name="id" value="<%= user.id %>" hidden>
+                </div>
+            </div>
+            <br>
+            <h5>Integridad de Nervios craneales</h5>
+            <div class="col-sm-1 col-md-2 col-lg-3">
+            <label for="Olfatorio" class="form-label">I: Olfatorio</label>
+            <input type="text" class="form-control" id="Olfatorio" name="Olfatorio" value="<%= user.Olfatorio %>">
+             </div>
+            <div class="col-sm-1 col-md-2 col-lg-3">
+              <label for="Optico" class="form-label">II: Óptico</label>
+               <input type="text" class="form-control" id="Optico" name="Optico" value="<%= user.Optico %>">
+              </div>
+              <div class="col-sm-1 col-md-2 col-lg-3">
+                <label for="Oculomotor" class="form-label">III: Oculomotor</label>
+                 <input type="text" class="form-control" id="Oculomotor" name="Oculomotor" value="<%= user.Oculomotor %>">
+                </div>
+              <div class="col-sm-1 col-md-2 col-lg-3">
+                <label for="Troclear" class="form-label">IV: Troclear</label>
+                 <input type="text" class="form-control" id="Troclear" name="Troclear" value="<%= user.Troclear %>">
+                </div>
+                <div class="col-sm-1 col-md-2 col-lg-3">
+                  <label for="Trigemino" class="form-label">V:Trigémino</label>
+                   <input type="text" class="form-control" id="Trigemino" name="Trigemino" value="<%= user.Trigemino %>">
+                  </div>
+                  <div class="col-sm-1 col-md-2 col-lg-3">
+                    <label for="Abducems" class="form-label">VI: Abducems</label>
+                     <input type="text" class="form-control" id="Abducems" name="Abducems" value="<%= user.Abducems %>">
+                    </div>
+                    <div class="col-sm-1 col-md-2 col-lg-3">
+                      <label for="Facial" class="form-label">VII: Facial</label>
+                       <input type="text" class="form-control" id="Facial" name="Facial" value="<%= user.Facial %>">
+                      </div>
+                        <div class="col-sm-1 col-md-2 col-lg-3">
+                          <label for="Vestibulococlear" class="form-label">VIII: Vestibulococlear</label>
+                           <input type="text" class="form-control" id="Vestibulococlear" name="Vestibulococlear" value="<%= user.Vestibulococlear %>">
+                          </div>
+                          <div class="col-sm-1 col-md-2 col-lg-3">
+                            <label for="Glosofaringeo" class="form-label">IX: Glosofaríngeo</label>
+                             <input type="text" class="form-control" id="Glosofaringeo" name="Glosofaringeo" value="<%= user.Glosofaringeo %>">
+                            </div>
+                            <div class="col-sm-1 col-md-2 col-lg-3">
+                              <label for="Vago" class="form-label">X: Vago</label>
+                               <input type="text" class="form-control" id="Vago" name="Vago" value="<%= user.Vago %>">
+                              </div>
+                              <div class="col-sm-1 col-md-2 col-lg-3">
+                                <label for="Accesorio" class="form-label">XI: Accesorio</label>
+                                 <input type="text" class="form-control" id="Accesorio" name="Accesorio" value="<%= user.Accesorio %>">
+                                </div>
+                                <div class="col-sm-1 col-md-2 col-lg-3">
+                                  <label for="Hipogloso" class="form-label">XII: Hipogloso</label>
+                                   <input type="text" class="form-control" id="Hipogloso" name="Hipogloso" value="<%= user.Hipogloso %>">
+                                  </div>
+                        <div></div>
+                    <br>
+                    <br>
+                    <h5>Integridad de nervios periféricos / Procesamiento Sensorial</h5>
+                    <br>
+                    <br>
+                    <h6>Sensibilidad Superficial (Tacto, Dolor)</h6>
+                    <div class="col-sm-1 col-md-2 col-lg-3">
+                      <label for="MiembroSupSS" class="form-label">Miembros Superiores</label>
+                       <input type="text" class="form-control" id="MiembroSupSS" name="MiembroSupSS" value="<%= user.MiembroSupSS %>">
+                      </div>
+                      <div class="col-sm-1 col-md-2 col-lg-3">
+                        <label for="MiembroInfSS" class="form-label">
+                        Miembros Inferiores</label>
+                         <input type="text" class="form-control" id="MiembroInfSS" name="MiembroInfSS" value="<%= user.MiembroInfSS %>">
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+                        <div></div>
+                        <br>
+                        <h6>Sensibilidad Profunda (Batiestesia)</h6>
+                        <div class="col-sm-1 col-md-2 col-lg-3">
+                          <label for="MiembroSupSP" class="form-label">Miembros Superiores</label>
+                           <input type="text" class="form-control" id="MiembroSupSP" name="MiembroSupSP" value="<%= user.MiembroSupSP %>">
+                          </div>
+                          <div class="col-sm-1 col-md-2 col-lg-3">
+                            <label for="MiembroInfSP" class="form-label">
+                            Miembros Inferiores</label>
+                             <input type="text" class="form-control" id="MiembroInfSP" name="MiembroInfSP" value="<%= user.MiembroInfSP %>">
+                            </div>
+                            <div></div>
+                            <div></div>
+                            <br>
+                            <h5>Marcha</h5>
+                            <div></div>
+                            <h6>Parámetros Temporales de la marcha</h6>
+                            <div class="col-sm-1 col-md-2 col-lg-3">
+                              <label for="CicloMarcha" class="form-label">Ciclo de la Marcha</label>
+                               <input type="text" class="form-control" id="CicloMarcha" name="CicloMarcha" value="<%= user.CicloMarcha %>">
+                              </div>
+                              <div class="col-sm-1 col-md-2 col-lg-3">
+                                <label for="PeriodoP" class="form-label">Período del paso</label>
+                                 <input type="text" class="form-control" id="PeriodoP" name="PeriodoP" value="<%= user.PeriodoP %>">
+                                </div>
+                                <div class="col-sm-1 col-md-2 col-lg-3">
+                                  <label for="PeriodoB" class="form-label">Período de balanceo</label>
+                                   <input type="text" class="form-control" id="PeriodoB" name="PeriodoB" value="<%= user.PeriodoB %>">
+                                  </div>
+                                  <div class="col-sm-1 col-md-2 col-lg-3">
+                                    <label for="Frecuencia" class="form-label">Frecuencia (Cadencia)</label>
+                                     <input type="text" class="form-control" id="Frecuencia" name="Frecuencia" value="<%= user.Frecuencia %>">
+                                    </div>
+                                    <div class="col-sm-1 col-md-2 col-lg-3">
+                                      <label for="Velocidad" class="form-label">Velocidad</label>
+                                       <input type="text" class="form-control" id="Velocidad" name="Velocidad" value="<%= user.Velocidad %>">
+                                      </div>
+                                      <div class="col-sm-1 col-md-2 col-lg-3">
+                                        <label for="AceleraciónL" class="form-label">Aceleración línea</label>
+                                         <input type="text" class="form-control" id="AceleraciónL" name="AceleraciónL" value="<%= user.AceleraciónL %>">
+                                        </div>
+                                        <br>
+                                        <div></div>
+                                        <br>
+                                        <h6>Parámetros especiales de la marcha</h6>
+                                        <div class="col-sm-1 col-md-2 col-lg-3">
+                                          <label for="Zancada" class="form-label">Zancada</label>
+                                           <input type="text" class="form-control" id="Zancada" name="Zancada" value="<%= user.Zancada %>">
+                                          </div>
+                                          <div class="col-sm-1 col-md-2 col-lg-3">
+                                            <label for="LongitudPaso" class="form-label">Longitud del paso</label>
+                                             <input type="text" class="form-control" id="LongitudPaso" name="LongitudPaso" value="<%= user.LongitudPaso %>">
+                                            </div>
+                                            <div class="col-sm-1 col-md-2 col-lg-3">
+                                              <label for="AnguloPaso" class="form-label">Ángulo del paso</label>
+                                               <input type="text" class="form-control" id="AnguloPaso" name="AnguloPaso" value="<%= user.AnguloPaso %>">
+                                              </div>
+                                              <div></div>
+                                              <div></div>
+                                              <br>
+                                              <h5>Integridad Tegumentaria</h5>
+                                              <div></div>
+                                              <h6>Características Tróficas</h6>
+                                              <div class="col-sm-1 col-md-2 col-lg-3">
+                                                <label for="Color" class="form-label">Color</label>
+                                                 <input type="text" class="form-control" id="Color" name="Color" value="<%= user.Color %>">
+                                                </div>
+                                                <div class="col-sm-1 col-md-2 col-lg-3">
+                                                  <label for="Hidratacion" class="form-label">Hidratación</label>
+                                                   <input type="text" class="form-control" id="Hidratacion" name="Hidratacion" value="<%= user.Hidratacion %>">
+                                                  </div>
+                                                  <div class="col-sm-1 col-md-2 col-lg-3">
+                                                    <label for="Temperatura" class="form-label">Temperatura</label>
+                                                     <input type="text" class="form-control" id="Temperatura" name="Temperatura" value="<%= user.Temperatura %>">
+                                                    </div>
+                                                    <div class="col-sm-1 col-md-2 col-lg-3">
+                                                      <label for="Vascularidad" class="form-label">Vascularidad</label>
+                                                       <input type="text" class="form-control" id="Vascularidad" name="Vascularidad" value="<%= user.Vascularidad %>">
+                                                      </div>
+                                                      <div class="col-sm-1 col-md-2 col-lg-3">
+                                                        <label for="Flexibilidad" class="form-label">Flexibilidad</label>
+                                                         <input type="text" class="form-control" id="Flexibilidad" name="Flexibilidad" value="<%= user.Flexibilidad %>">
+                                                        </div>
+                                                          <br>
+                                                          <div></div>
+                                                          <br>
+                                                          <h6>Cartacterísticas Mecánicas</h6>
+                                                          <div class="col-sm-1 col-md-2 col-lg-3">
+                                                            <label for="Elasticidad" class="form-label">Elasticidad</label>
+                                                             <input type="text" class="form-control" id="Elasticidad" name="Elasticidad" value="<%= user.Elasticidad %>">
+                                                            </div>
+                                                            <div class="col-sm-1 col-md-2 col-lg-3">
+                                                              <label for="Viscosidad" class="form-label">Viscosidad</label>
+                                                               <input type="text" class="form-control" id="Viscosidad" name="Viscosidad" value="<%= user.Viscosidad %>">
+                                                              </div>
+                                                              <div class="col-sm-1 col-md-2 col-lg-3">
+                                                                <label for="Volumen" class="form-label">Volumen</label>
+                                                                 <input type="text" class="form-control" id="Volumen" name="Volumen" value="<%= user.Volumen %>">
+                                                                </div>
+                                                                <br>
+                                                                <div></div>
+                                                                <br>
+                                                                <h6>Presencia de Cicatrices</h6>
+                                                                <div class="col-sm-1 col-md-2 col-lg-3">
+                                                                   <input type="text" class="form-control" id="PCicatrices" name="PCicatrices" value="<%= user.PCicatrices %>">
+                                                                  </div> 
+                                                                  <div>
+                                                                    <br>
+                                                                  </div>        <h5>Dolor</h5>
+                            <div class="col-sm-1 col-md-2 col-lg-3">
+                              <label for="OpcionDolorNeuro" class="form-label">Dolor</label>
+                                <select name="OpcionDolorNeuro" id="OpcionDolorNeuro" class="form-select">
+                                    <option <%= user.OpcionDolorNeuro=='Sí' ? "selected" : '' %> value="Sí">Sí</option>
+                                    <option <%= user.OpcionDolorNeuro=='No' ? "selected" : '' %> value="No">No</option>
+                                    <option <%= user.OpcionDolorNeuro=='No aplica' ? "selected" : '' %> value="No aplica">No aplica</option>
+                                </select>
+                            </div>
+                        <div class="col-sm-1 col-md-2 col-lg-3">
+                          <label for="DolorNeuroLocalizacion" class="form-label">Localización</label>
+                           <input type="text" class="form-control" id="DolorNeuroLocalizacion" name="DolorNeuroLocalizacion" value="<%= user.DolorNeuroLocalizacion %>">
+                          </div>
+                          <div class="col-sm-1 col-md-2 col-lg-3">
+                            <label for="DolorNeuroIntensidad" class="form-label">Intensidad</label>
+                             <input type="text" class="form-control" id="DolorNeuroIntensidad" name="DolorNeuroIntensidad" value="<%= user.DolorNeuroIntensidad %>">
+                            </div>
+                            <div class="col-sm-1 col-md-2 col-lg-3">
+                              <label for="DolorNeuroFactoresAgravantes" class="form-label">Factores Agravantes</label>
+                               <input type="text" class="form-control" id="DolorNeuroFactoresAgravantes" name="DolorNeuroFactoresAgravantes" value="<%= user.DolorNeuroFactoresAgravantes %>">
+                              </div>
+                              <div class="col-sm-1 col-md-2 col-lg-3">
+                                  <label for="DolorNeuroFactoresAtenuantes" class="form-label">Factores Atenuantes</label>
+                                   <input type="text" class="form-control" id="DolorNeuroFactoresAtenuantes" name="DolorNeuroFactoresAtenuantes" value="<%= user.DolorNeuroFactoresAtenuantes %>">
+                                </div>
+                                <div class="col-sm-1 col-md-2 col-lg-3">
+                                  <label for="DolorNeuroEvolucion" class="form-label">Evolución</label>
+                                   <input type="text" class="form-control" id="DolorNeuroEvolucion" name="DolorNeuroEvolucion" value="<%= user.DolorNeuroEvolucion %>">
+                                </div>
+                                <div class="col-sm-1 col-md-2 col-lg-3">
+                                  <label for="DolorNeuroFrecuencia" class="form-label">Frecuencia</label>
+                                   <input type="text" class="form-control" id="DolorNeuroFrecuencia" name="DolorNeuroFrecuencia" value="<%= user.DolorNeuroFrecuencia %>">
+                                </div>
+                                <br>
+                                <br>
+                                <br>
+                                <div></div>
+                                <br>
+                                <br>
+                                <h5>Integridad Refleja</h5>
+                                <br>
+                               <br>
+                                <h6>Reflejos Osteotendinosos</h6>
+                    <div class="col-sm-1 col-md-2 col-lg-3">
+                      <label for="MiembrosSupRo" class="form-label">Miembros Superiores</label>
+                       <input type="text" class="form-control" id="MiembrosSupRo" name="MiembrosSupRo" value="<%= user.MiembrosSupRo %>">
+                      </div>
+                      <div class="col-sm-1 col-md-2 col-lg-3">
+                        <label for="MiembrosInfRo" class="form-label">
+                        Miembros Inferiores</label>
+                         <input type="text" class="form-control" id="MiembrosInfRo" name="MiembrosInfRo" value="<%= user.MiembrosInfRo %>">
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+                        <div></div>
+                        <br>
+                        <h6>Tono Múscular</h6>
+                        <div class="col-sm-1 col-md-2 col-lg-3">
+                          <label for="MiembrosSupTm" class="form-label">Miembros Superiores</label>
+                           <input type="text" class="form-control" id="MiembrosSupTm" name="MiembrosSupTm" value="<%= user.MiembrosSupTm %>">
+                          </div>
+                          <div class="col-sm-1 col-md-2 col-lg-3">
+                            <label for="MiembrosInfTm" class="form-label">
+                            Miembros Inferiores</label>
+                             <input type="text" class="form-control" id="MiembrosInfTm" name="MiembrosInfTm" value="<%= user.MiembrosInfTm %>">
+                            </div>
+                            <div class="col-md-4" hidden>
+                                <input type="number" class="form-control" id="FKPersona" name="FKPersona" value="<%= user.FKPersona %>">
+                            </div>
+      <div></div>
+      <br>
+        <button type="submit" class="btn btn-outline-primary" style="width : 90px; height: 90px"  tabindex="12">Guardar datos</button>
+        <br>
+        <div></div>
+        <br>
+          </form>
+          </div>
+        </div>
+      </div>
+  </body>
+</html>

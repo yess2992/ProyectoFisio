@@ -1,0 +1,41 @@
+.table-responsive {
+  height: 200px;
+  overflow-y: scroll;
+}
+thead {
+  position: sticky;
+  top: 0;
+  /* align-content: center;   */
+}
+
+nav {
+  width: 1639px;
+}
+
+.navbar {
+  font-size: 21px;
+}
+
+table th,
+td {
+  text-align: center;
+  align-items: center;
+  vertical-align: middle;
+}
+
+table {
+  text-align: center;
+}
+
+@media (max-width: 575px) {
+  table thead {
+    display: none;
+  }
+
+  table tr {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid white;
+    padding: 1px;
+  }
+}
